@@ -73,9 +73,6 @@ This README provides a comprehensive guide to set up, containerize, and deploy a
   #Authenticate Docker
   aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <account_id>.dkr.ecr.<region>.amazonaws.com
   ```
-![Alt Text](/images/mern-images.JPG)
-
-![Alt Text](/images/mern-ecr-repo.JPG)
 
 
 ---
@@ -128,10 +125,7 @@ git push codecommit main
    ```bash
    sudo systemctl start jenkins
    sudo systemctl enable jenkins
-   ```
-
-   ![Alt Text](/images/JK-8.JPG)
-   
+   ```   
  4. **Access Jenkins UI:**
 
    - **Navigate to Jenkins UI:**
@@ -302,8 +296,6 @@ git push codecommit main
      curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
      ```
 
-     ![Alt Text](/images/cap-helm-installation.JPG)
-
 4. **Create Kubernetes Manifests:**
    - Write Helm charts or YAML manifests for your MERN application components (frontend, backend). Example for the backend:
      ```yaml
@@ -410,29 +402,3 @@ This project demonstrates the end-to-end deployment of a scalable MERN stack app
 Through this deployment, we have created a robust, secure, and efficient cloud-based solution, showcasing the power of containerized microservices and AWS for modern application development. This architecture can be further extended with additional microservices, serverless components, or advanced security features to meet evolving requirements.
 
 The comprehensive documentation and modular design also allow for easy reproduction of this setup, enabling developers to adapt the process for similar applications or projects.
-
-
-## **11. Contributing**
-
-I welcome contributions! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Commit your changes with clear messages.
-4. Submit a pull request for review.
-
-Make sure to follow the code style guidelines and include proper documentation for any new features.
-
-
-## **12. Contact**
-
-For any queries, feel free to contact me:
-
-- **Email:** adityavakharia@gmail.com
-- **GitHub:** [Aditya-rgb](https://github.com/Aditya-rgb/Deploying-and-Scaling-Web-Application)
-
-You can also open an issue in the repository for questions or suggestions.
-
-
-
-
