@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: 1934111/kubernetes
+  tag: capstone2-backend
+
+service:
+  type: NodePort  # Options: NodePort or ClusterIP
+  port: 3000
+  targetPort: 3000
+  nodePort: 30007  # Optional: Only required if service.type is NodePort
+
+resources: {}
+

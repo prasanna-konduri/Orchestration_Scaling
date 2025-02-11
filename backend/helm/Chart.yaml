@@ -1,0 +1,7 @@
+apiVersion: v2
+name: my-backend
+description: A Helm chart for Kubernetes backend deployment
+type: application
+version: 0.1.0
+appVersion: "1.0"
+
